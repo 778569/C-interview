@@ -71,8 +71,14 @@ class Test
         //String alpha = stringBuilder.ToString();
         //Console.WriteLine(alpha);
 
-       string name = normalize("Hi! I am Kavinda Bandara, Wecome to my course");
-        Console.WriteLine(name);
+        //string name = normalize("Hi! I am Kavinda Bandara, Wecome to my course");
+        // Console.WriteLine(name);
+        // Console.ReadLine();
+
+        bool Check = IsUpperCase("YES");
+        bool Check1 = IsUpperCase("Yes");
+        Console.WriteLine(Check);
+        Console.WriteLine(Check1);
         Console.ReadLine();
 
     }
@@ -87,6 +93,14 @@ class Test
     public static string normalize(string input)
     {
         return input.ToLower().Trim().Replace(",", "");
+    }
+
+
+    public static bool IsUpperCase(string S)
+    {
+        return S.All(char.IsUpper);
+
+        // in here all String uper case return true
     }
 }
 
