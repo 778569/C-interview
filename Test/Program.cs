@@ -18,8 +18,11 @@ class Dog
 
     public static void Bark()
     {
-        Console.WriteLine("Buh BUh");
-        Console.ReadLine();
+        //Console.WriteLine("Buh BUh");
+        //Console.ReadLine();
+
+
+
     }
 
 
@@ -45,22 +48,32 @@ class Test
 
         //Console.WriteLine(x);
 
-        string firstName = "Shelly";
-        string lastName = "Parker";
+        //string firstName = "Shelly";
+        //string lastName = "Parker";
 
-        string name = firstName + " " + lastName;
+        //string name = firstName + " " + lastName;
 
-        StringBuilder stringBuilder = new StringBuilder("abc");
-        stringBuilder.Append("def");
-        String alpha2 = stringBuilder.ToString();
-        Console.WriteLine(alpha2);
-        stringBuilder.Append("ghi");
-        String alpha1 = stringBuilder.ToString();
-        Console.WriteLine(alpha1);
-        stringBuilder.Insert(0, "xyz");
-        stringBuilder.Remove(3, 6);
-        String alpha = stringBuilder.ToString();
-        Console.WriteLine(alpha);
+        //StringBuilder stringBuilder = new StringBuilder("abc");
+        //stringBuilder.Append("def");
+        //String alpha2 = stringBuilder.ToString();
+        //Console.WriteLine(alpha2);
+
+        //stringBuilder.Append("ghi");
+        //String alpha1 = stringBuilder.ToString();
+        //Console.WriteLine(alpha1);
+
+        //stringBuilder.Insert(0, "xyz");
+
+        //String alpha3 = stringBuilder.ToString();
+        //Console.WriteLine(alpha3);
+
+        //stringBuilder.Remove(3, 6);
+        //String alpha = stringBuilder.ToString();
+        //Console.WriteLine(alpha);
+
+       string name = normalize("Hi! I am Kavinda Bandara, Wecome to my course");
+        Console.WriteLine(name);
+        Console.ReadLine();
 
     }
 
@@ -68,6 +81,12 @@ class Test
     {
         x *= x;
         return x;
+    }
+
+
+    public static string normalize(string input)
+    {
+        return input.ToLower().Trim().Replace(",", "");
     }
 }
 
