@@ -1,0 +1,15 @@
+/Users/linkedin/Desktop/NailInterview/bin/Debug/net6.0/NailInterview
+/Users/linkedin/Desktop/NailInterview/bin/Debug/net6.0/NailInterview.deps.json
+/Users/linkedin/Desktop/NailInterview/bin/Debug/net6.0/NailInterview.runtimeconfig.json
+/Users/linkedin/Desktop/NailInterview/bin/Debug/net6.0/NailInterview.dll
+/Users/linkedin/Desktop/NailInterview/bin/Debug/net6.0/NailInterview.pdb
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.csproj.AssemblyReference.cache
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.GeneratedMSBuildEditorConfig.editorconfig
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.AssemblyInfoInputs.cache
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.AssemblyInfo.cs
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.csproj.CoreCompileInputs.cache
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.dll
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/refint/NailInterview.dll
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.pdb
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/NailInterview.genruntimeconfig.cache
+/Users/linkedin/Desktop/NailInterview/obj/Debug/net6.0/ref/NailInterview.dll
