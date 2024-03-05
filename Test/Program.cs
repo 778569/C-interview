@@ -81,11 +81,11 @@ class Test
         //Console.WriteLine(Check1);
         //Console.ReadLine();
 
-        string Name = "Hello my Name is Kavinda";
+        //string Name = "Hello my Name is Kavinda";
 
-        string Input = "Hello";
+        //string Input = "Hello";
 
-
+        //Console.WriteLine(Input.Length);
 
         //bool IsHave = Name.ToLower().Contains("kavinda");
 
@@ -94,9 +94,17 @@ class Test
         //CountOfString(Input);
 
 
-        bool isTrue = isAtEvenIndex(Input, 'o');
-        Console.WriteLine(isTrue);
+        //bool isTrue = isAtEvenIndex(Input, 'o');
+        //Console.WriteLine(isTrue);
         //Console.ReadLine();
+
+        Console.WriteLine(Reverse(null));
+        Console.WriteLine(Reverse(""));
+        Console.WriteLine(Reverse("Hello"));
+        Console.WriteLine(Reverse("Me! kbd"));
+        Console.WriteLine(Reverse("null"));
+        //Console.WriteLine(Reverse(null));
+        //Console.WriteLine(Reverse(null));
 
     }
 
@@ -153,6 +161,38 @@ class Test
         }
 
         return false;
+    }
+
+
+    public static string Reverse(string input)
+    {
+        if (string.IsNullOrEmpty(input))
+        {
+            return input;
+        }
+        StringBuilder reverse = new StringBuilder(input.Length);
+
+        
+
+        for(int i = input.Length - 1; i >= 0; i--)
+        {
+            reverse.Append(input[i]);
+        }
+        return reverse.ToString();
+    }
+
+
+    public static string Reverse2(string input)
+    {
+        if (String.IsNullOrEmpty(input))
+        {
+            return input;
+        }
+
+        char[] charArry = input.ToCharArray();
+        Array.Reverse(charArry);
+
+        return new string(charArry);
     }
 }
 
