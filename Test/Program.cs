@@ -108,8 +108,8 @@ class Test
         //Console.WriteLine(Reverse(null));
 
 
-       var IsPalindrome =  Palindrome("Kavinda");
-       Console.WriteLine($"Is Palindrome = {IsPalindrome}");
+       //var IsPalindrome =  Palindrome("Kavinda");
+       //Console.WriteLine($"Is Palindrome = {IsPalindrome}");
 
     }
 
@@ -225,6 +225,27 @@ class Test
 
 
        
+    }
+
+    public static string ReverseEachWord(String input)
+    {
+        if (String.IsNullOrEmpty(input))
+        {
+            return input;
+        }
+
+        StringBuilder result = new StringBuilder();
+        string[] arr = input.Split(" ");
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            result.Append(Reverse(arr[i]));
+            if(i!= arr.Length - 1)
+            {
+                result.Append(" ");
+            }
+        }
+        return result.ToString();
     }
 }
 
