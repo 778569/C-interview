@@ -75,10 +75,24 @@ class Test
         // Console.WriteLine(name);
         // Console.ReadLine();
 
-        bool Check = IsUpperCase("YES");
-        bool Check1 = IsUpperCase("Yes");
-        Console.WriteLine(Check);
-        Console.WriteLine(Check1);
+        //bool Check = IsUpperCase("YES");
+        //bool Check1 = IsUpperCase("Yes");
+        //Console.WriteLine(Check);
+        //Console.WriteLine(Check1);
+        //Console.ReadLine();
+
+        string Name = "Hello my Name is Kavinda";
+
+
+        bool IsHave = Name.ToLower().Contains("kavinda");
+
+        Console.WriteLine(IsHave);
+
+
+
+
+
+
         Console.ReadLine();
 
     }
