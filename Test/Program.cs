@@ -2,6 +2,7 @@
 
 using System.Text;
 
+
 class Dog
 {
 
@@ -98,13 +99,17 @@ class Test
         //Console.WriteLine(isTrue);
         //Console.ReadLine();
 
-        Console.WriteLine(Reverse(null));
-        Console.WriteLine(Reverse(""));
-        Console.WriteLine(Reverse("Hello"));
-        Console.WriteLine(Reverse("Me! kbd"));
-        Console.WriteLine(Reverse("null"));
+        //Console.WriteLine(Reverse(null));
+        //Console.WriteLine(Reverse(""));
+        //Console.WriteLine(Reverse("Hello"));
+        //Console.WriteLine(Reverse("Me! kbd"));
+        //Console.WriteLine(Reverse("null"));
         //Console.WriteLine(Reverse(null));
         //Console.WriteLine(Reverse(null));
+
+
+       var IsPalindrome =  Palindrome("Kavinda");
+       Console.WriteLine($"Is Palindrome = {IsPalindrome}");
 
     }
 
@@ -193,6 +198,33 @@ class Test
         Array.Reverse(charArry);
 
         return new string(charArry);
+    }
+
+    public static bool Palindrome(string input)
+    {
+
+        var NewInput = input.ToLower();
+        StringBuilder builder = new StringBuilder(NewInput.Length);
+
+        for (int i = NewInput.Length - 1; i >= 0; i--)
+        {
+            //var Check = NewInput[i];
+            
+            var newWord = builder.Append(NewInput[i]);
+            
+            
+        }
+        var builder1 = builder.ToString();
+
+        if (builder1 == NewInput)
+        {
+            return true;
+        }
+
+        return false;
+
+
+       
     }
 }
 
