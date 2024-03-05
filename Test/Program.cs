@@ -83,17 +83,20 @@ class Test
 
         string Name = "Hello my Name is Kavinda";
 
-
-        bool IsHave = Name.ToLower().Contains("kavinda");
-
-        Console.WriteLine(IsHave);
+        string Input = "Hello";
 
 
 
+        //bool IsHave = Name.ToLower().Contains("kavinda");
+
+        //Console.WriteLine(IsHave);
+
+        //CountOfString(Input);
 
 
-
-        Console.ReadLine();
+        bool isTrue = isAtEvenIndex(Input, 'o');
+        Console.WriteLine(isTrue);
+        //Console.ReadLine();
 
     }
 
@@ -115,6 +118,41 @@ class Test
         return S.All(char.IsUpper);
 
         // in here all String uper case return true
+    }
+
+
+    public static void CountOfString(string NewString)
+    {
+        foreach (var item in NewString)
+        {
+            Console.WriteLine(item);
+            //Console.ReadKey();
+        }
+
+        for (int i = 0; i < NewString.Length; i++)
+        {
+            Console.WriteLine(NewString[i]);
+            //Console.ReadKey();
+        }
+    }
+
+    public static bool isAtEvenIndex(string input, char item)
+    {
+
+        if (string.IsNullOrEmpty(input))
+        {
+            return false;
+        }
+
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] == item)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
 
